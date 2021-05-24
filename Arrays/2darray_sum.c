@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+       int i, j,r,c;
+       int sum =0;
+       int array[10][10];
+    printf("Enter the number of rows and column of array:");
+    scanf("%d%d",&r,&c);
+    //FOR INPUT
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+            printf("Enter value for Array[%d][%d]:",i,j);
+            scanf("%d",&array[i][j]);
+        }
+    }
+        //FOR SUM
+        for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+           sum= sum+ array[i][j];
+        }
+    }
+    printf("Sum = %d",sum);
+
+}
